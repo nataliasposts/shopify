@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="blue-raspberry" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="#6aa3ff"/>
+    <circle cx="9" cy="11" r="2.5" fill="#2c5bd9"/>
+    <circle cx="14.5" cy="13.5" r="2.8" fill="#2c5bd9"/>
+  </symbol>
+  <symbol id="peach-cream" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" fill="#ffb38a"/>
+    <path d="M7 9c2-1 4-1 6 0" stroke="#ffd6bf" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mullein" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="#a7f3d0"/>
+    <path d="M12 17c3-4 3-7 0-10-3 3-3 6 0 10Z" fill="#059669"/>
+  </symbol>
+  <symbol id="lavender-berry" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="#e9d5ff"/>
+    <path d="M9 14l6-6M9 10l6 6" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="cool-mint-frost" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="#dbeafe"/>
+    <path d="M12 5v14M5 12h14M7 7l10 10M7 17L17 7" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="watermelon" viewBox="0 0 24 24">
+    <path d="M12 20A8 8 0 0 1 12 4v16Z" fill="#ef4444"/>
+    <path d="M12 20A8 8 0 0 1 12 4" stroke="#16a34a" stroke-width="3" fill="none"/>
+    <circle cx="10" cy="13" r="0.8" fill="#111"/>
+    <circle cx="12.5" cy="12" r="0.8" fill="#111"/>
+    <circle cx="11" cy="10" r="0.8" fill="#111"/>
+  </symbol>
+</svg>

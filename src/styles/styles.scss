@@ -1,0 +1,607 @@
+/* ==============================
+   Global vars
+============================== */
+@use "./fonts";
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text: #020202;
+  --color-card-text: #131313;
+  --color-paragraph: #363636;
+  --color-primary: #7cd8f2;
+  --hero-bg-1: #e4f9ff;
+  --hero-bg-2: #a9ecff;
+  --hero-bg-alt: #f7f4fb;
+  --font-title: 'HelveticaTextExtraBold'
+  --font-style-title: italic
+}
+
+/* ==============================
+   Base
+============================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "helvetica-now-text", "HelveticaText";
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.45;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* ==============================
+   Announcement
+============================== */
+.announcement {
+  background: var(--color-primary);
+}
+
+.announcement__text {
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+  font-size: 15px;
+  color: var(--color-white);
+  font-weight: 700
+}
+
+/* ==============================
+   Hero
+============================== */
+.hero {
+  background-image: radial-gradient(
+    160% 140% at 20% 45%,
+    var(--hero-bg-1) 0%,
+    var(--hero-bg-1) 42%,
+    var(--hero-bg-2) 100%
+  );
+  padding: 32px 0;
+}
+
+.hero__grid {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero__copy {
+  width: 35%;
+}
+.hero__image-wrapper {
+  width: 65%;
+}
+
+.hero__title {
+  font-size: 36px;
+  color: var(--color-black);
+  margin: 10px 0;
+  font-family: "HelveticaTextExtraBold";
+  font-style: italic;
+}
+
+.hero__subtitle {
+  color: var(--color-paragraph);
+  font-size: 18px;
+  max-width: 450px;
+  margin: 0 0 15px;
+  font-family: "HelveticaTextBold";
+}
+
+.hero__bullets {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.hero__bullets-text {
+  font-size: 18px;
+  color: var(--color-text);
+  font-family: "HelveticaTextBold";
+  margin: 0;
+}
+
+.hero__bullet{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hero__bullet img {
+  width: 24px;
+  height: 24px;
+  display: block;               
+  flex: 0 0 24px;
+}
+
+.hero__image {
+  width: 800px;
+  height: 300px;
+}
+
+.rating__row {
+  display: flex;
+  flex-direction: row;
+}
+.rating__label {
+  color: var(--color-text);
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+/* ==============================
+   Tabs
+============================== */
+.tabs {
+  padding: 24px 0 8px;
+}
+
+.tabs__list {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tabs__btn {
+  background: #a8ced9;
+  width: 235px;
+  font-size: 16px;
+}
+
+.tabs__btn.is-active {
+  background: #00607c;
+}
+
+/* ==============================
+   Collection
+============================== */
+.collection {
+  max-width: 100%;
+  padding: 32px 0;
+}
+.collection__status {
+  margin-bottom: 8px;
+}
+
+.collection__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Разделитель Bundle & Save — перенесён из мобайла в базовый слой */
+.collection__divider {
+  display: none;
+}
+
+/* ==============================
+   Card
+============================== */
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 334px;
+}
+
+.card__cta {
+  margin-top: auto;
+}
+
+.card__media {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.card__media img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Badges container (общий) */
+.card__badges {
+  position: absolute;
+  display: flex;
+  gap: 6px;
+  padding: 8px;
+  left: 0;
+}
+
+/* Top/Bottom placement */
+.card__badges-top {
+  top: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+.card__badges-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  bottom: 0;
+  justify-content: center;
+}
+
+/* Badge (единое определение — убран дубль выше по файлу) */
+.badge {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 4px 8px;
+  border-radius: 33px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.badge__text {
+  margin: 0;
+}
+.badge__icon {
+  margin: 0;
+}
+.badge__icon .svg-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Вариант для LIMITED */
+.badge-limited {
+  background: #042324;
+  color: var(--color-white);
+}
+
+/* Card body */
+.card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  margin: 10px 0 0;
+  font-size: 20px;
+  color: var(--color-card-text);
+  font-family: "HelveticaTextExtraBold";
+  font-style: italic;
+}
+
+.card__flavour {
+  color: var(--color-paragraph);
+  font-family: "HelveticaTextBold";
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.card__meta {
+  color: #7a7a7a;
+  font-size: 15px;
+  margin: 0;
+}
+
+.card__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.card__price-current {
+  font-weight: 900;
+  font-size: 20px;
+}
+.card__price-compare {
+  color: var(--color-paragraph);
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card__discount {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 4px 12px;
+  border-radius: 47px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.card__btn {
+  width: 100%;
+  background: var(--color-primary);
+  font-size: 20px;
+}
+
+.btn {
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  padding: 14px 24px;
+  font-family: "HelveticaTextExtraBold";;
+}
+
+/* ==============================
+   Skeleton
+============================== */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.card.is-loading .card__media,
+.card.is-loading .card__body > *,
+.card.is-loading .card__cta > * {
+  background: #eef2f7;
+  animation: pulse 1.2s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+.card.is-loading .card__media {
+  position: relative;
+  border-radius: 16px 16px 0 0;
+}
+
+/* ==============================
+   Load/Empty
+============================== */
+.collection__load {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.load-btn {
+  background: var(--color-primary);
+  font-size: 16px;
+  align-self: center;
+}
+.collection__empty {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ==============================
+   FAQ
+============================== */
+.faq {
+  padding: 56px 281px;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq__title {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 25px;
+  font-family: "HelveticaTextExtraBold";
+  font-style: italic;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-black);
+}
+
+.faq__btn {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.faq__panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+  color: var(--color-text);
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.faq__item[aria-expanded="true"] .faq__panel {
+  max-height: 400px;
+  padding-bottom: 12px;
+}
+
+/* ==============================
+   Media
+============================== */
+@media (min-width: 720px) {
+  .badge__icon .svg-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero__image {
+    width: 700px;
+    max-height: 300px;
+  }
+  .collection__grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1146px) {
+  .hero__image {
+    width: 600px;
+  }
+  .faq {
+    padding: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__grid {
+    flex-direction: column;
+  }
+  .hero__copy {
+    width: 100%;
+  }
+  .hero__image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero__subtitle {
+    max-width: 100%;
+  }
+  .tabs__list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 635px) {
+  .hero__image {
+    width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__image {
+    width: 360px;
+    height: 200px;
+  }
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero__subtitle {
+    font-size: 14px;
+  }
+  .hero__label {
+    font-size: 14px;
+  }
+  .hero__bullets-text {
+    font-size: 14px;
+  }
+
+  .tabs__list {
+    flex-wrap: nowrap;
+    font-size: 14px;
+  }
+  .tabs__btn {
+    font-size: 14px;
+  }
+
+  .faq {
+    padding: 46px 15px;
+  }
+  .faq__title {
+    font-size: 28px;
+  }
+  .faq__btn {
+    font-size: 16px;
+  }
+  .announcement__text {
+    font-size: 11px;
+  }
+
+  .card__price-compare,
+  .card__price-current {
+    font-size: 14px;
+    align-self: center;
+  }
+
+  .card__discount {
+    font-size: 12px;
+  }
+  .card__btn {
+    font-size: 14px;
+  }
+
+  .card:not(.first-card, .card__bundle) .card__title {
+    width: 100px;
+  }
+
+  .card__title {
+    font-size: 17px;
+  }
+  .card__flavour,
+  .card__meta {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 395px) {
+  .first-card,
+  .card__bundle {
+    width: 358px !important;
+  }
+
+  .card:not(.first-card, .card__bundle) {
+    width: 171px;
+  }
+  .card:not(.first-card, .card__bundle) .card__badges {
+    height: 100%;
+    flex-direction: column;
+  }
+  .card:not(.first-card, .card__bundle) .badge-sale {
+    align-self: self-start;
+  }
+  .card:not(.first-card, .card__bundle) .badge-relax,
+  .card:not(.first-card, .card__bundle) .badge-energy,
+  .card:not(.first-card, .card__bundle) .badge-detox,
+  .card:not(.first-card, .card__bundle) .badge-sleep,
+  .card:not(.first-card, .card__bundle) .badge-enhance {
+    align-self: flex-end;
+  }
+
+  .collection__grid {
+    gap: 16px;
+  }
+  .collection__divider {
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .collection__divider-title {
+    font-size: 16px;
+    color: var(--color-text);
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .collection__divider-line {
+    flex: 1 1 auto;
+    height: 0;
+    border-top: 1px solid #cccccc;
+    transform: translateY(1px);
+  }
+}

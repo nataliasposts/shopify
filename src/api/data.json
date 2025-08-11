@@ -1,0 +1,194 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "The Complete Set",
+      "flavour": "6 different flavours, 6 diffusers - one pack",
+      "description": "For Every Mood, All in One Pack",
+      "price": 70.0,
+      "compare_at_price": 113.7,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "LIMITED STOCK"],
+      "category": "bundles",
+      "image": "/images/сompleteSet.png",
+      "badgeBottom": [
+        "blue-raspberry",
+        "peach-cream",
+        "mullein",
+        "lavender-berry",
+        "cool-mint-frost",
+        "watermelon"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mullein Diffuser",
+      "flavour": "Detox Flavour",
+      "description": "For Lung Reset, Immune and Natural Detox",
+      "price": 16.11,
+      "compare_at_price": 18.95,
+      "discount_label": "15% Off",
+      "badge": ["BUY 2 GET 1 FREE", "DETOX"],
+      "category": "single",
+      "image": "/images/mulleinDiffuser.png"
+    },
+    {
+      "id": 3,
+      "title": "Calm Diffuser",
+      "flavour": "Peach Cream Flavour",
+      "description": "For Emotional Wellness & Mental Clarity",
+      "price": 16.11,
+      "compare_at_price": 18.95,
+      "discount_label": "15% Off",
+      "badge": ["BUY 2 GET 1 FREE", "RELAX"],
+      "category": "single",
+      "image": "/images/calmDiffuser.png"
+    },
+    {
+      "id": 4,
+      "title": "Vitamin B-12 Diffuser",
+      "flavour": "Strawberry Kiwi Flavour",
+      "description": "For Brain Power, Better Mood & Focus",
+      "price": 16.11,
+      "compare_at_price": 18.95,
+      "discount_label": "15% Off",
+      "badge": ["15% OFF"],
+      "category": "single",
+      "image": "/images/vitaminDiffuser.png"
+    },
+    {
+      "id": 5,
+      "title": "Caffeine Diffuser",
+      "flavour": "Cherry Ice Flavour",
+      "description": "For Fast Energy Without The Crash",
+      "price": 16.11,
+      "compare_at_price": 18.95,
+      "discount_label": "15% Off",
+      "badge": ["BUY 2 GET 1 FREE", "ENERGY"],
+      "category": "single",
+      "image": "/images/caffeineDiffuser.png"
+    },
+    {
+      "id": 6,
+      "title": "Gaming Diffuser",
+      "flavour": "Glowberry Flavour",
+      "description": "For Mental Sharpness & Hyper Focus",
+      "price": 16.11,
+      "compare_at_price": 18.95,
+      "discount_label": "15% Off",
+      "badge": ["BUY 2 GET 1 FREE", "ENHANCE"],
+      "category": "single",
+      "image": "/images/gamingDiffuser.png"
+    },
+    {
+      "id": 7,
+      "title": "Melatonin Diffuser",
+      "flavour": "Lavender Berry Flavour",
+      "description": "For Balanced Sleep Cycle & Deep Sleep",
+      "price": 16.11,
+      "compare_at_price": 18.95,
+      "discount_label": "15% Off",
+      "badge": ["BUY 2 GET 1 FREE", "SLEEP"],
+      "category": "single",
+      "image": "/images/melatoninDiffuser.png"
+    },
+    {
+      "id": 8,
+      "title": "Best Of Pure",
+      "flavour": "4 different flavours, 4 diffusers",
+      "description": "For Every Mood, All in One Bundle",
+      "price": 42.79,
+      "compare_at_price": 71.32,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "MULTI-FORMULA"],
+      "category": "bundles",
+      "image": "/images/bestPure.png",
+      "badgeBottom": [
+        "glowberry",
+        "peach-cream",
+        "cool-mint-frost",
+        "blue-raspberry"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Lung Reset Pack",
+      "flavour": "3 different flavours, 6 diffusers",
+      "description": "For Lung Reset, All in One Bundle",
+      "price": 64.18,
+      "compare_at_price": 106.97,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "DETOX"],
+      "category": "bundles",
+      "image": "/images/lungPack.png",
+      "badgeBottom": ["peach-cream", "lavender-berry", "mullein"]
+    },
+    {
+      "id": 10,
+      "title": "Sweet Dreams",
+      "flavour": "4 different flavours, 6 diffusers",
+      "description": "For Sweet Dreams & Calm Nights",
+      "price": 64.18,
+      "compare_at_price": 106.97,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "SLEEP"],
+      "category": "bundles",
+      "image": "/images/sweetDreams.png",
+      "badgeBottom": [
+        "peach-cream",
+        "mullein",
+        "lavender-berry",
+        "blue-raspberry"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "The Night + Day Kit",
+      "flavour": "5 different flavours, 8 diffusers",
+      "description": "For Night & Day, All in One Bundle",
+      "price": 85.58,
+      "compare_at_price": 142.63,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "MULTI-FORMULA"],
+      "category": "bundles",
+      "image": "/images/nightKit.png",
+      "badgeBottom": [
+        "peach-cream",
+        "mullein",
+        "lavender-berry",
+        "blue-raspberry"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Game Mode",
+      "flavour": "8 different flavours, 8 diffusers",
+      "description": "For Game Mode, All in One Bundle",
+      "price": 85.58,
+      "compare_at_price": 142.63,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "ENHANCE"],
+      "category": "bundles",
+      "image": "/images/gameMode.png",
+      "badgeBottom": [
+        "peach-cream",
+        "mullein",
+        "lavender-berry",
+        "blue-raspberry"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "The Sampler",
+      "flavour": "Ten different flavours, 10 diffusers",
+      "description": "For Every Mood, All in One Bundle",
+      "price": 85.58,
+      "compare_at_price": 142.63,
+      "discount_label": "40% Off",
+      "badge": ["40% OFF", "MULTI-FORMULA"],
+      "category": "bundles",
+      "image": "/images/sampler.png",
+      "badgeBottom": ["peach-cream"]
+    }
+  ]
+}

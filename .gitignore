@@ -1,0 +1,55 @@
+# --- Node / Package managers ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json.*
+yarn.lock.*
+pnpm-lock.yaml.*
+
+# --- Build outputs ---
+dist/
+build/
+*.log
+
+# --- Vite / Tooling caches ---
+.vite/
+vite.config.ts.timestamp-*
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.cache/
+.cache-loader/
+.esbuild/
+
+# --- Tests / Coverage ---
+coverage/
+.nyc_output/
+
+# --- Env / Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Editors / IDE ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.iml
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.Spotlight-V100
+.Trashes
+
+# --- Misc ---
+*.swp
+*.swo
+*.orig
+*.tmp

@@ -55,7 +55,7 @@ function renderBundleDivider() {
   `;
 }
 
-// render top badges
+
 function renderTopBadges(list: string[] = []) {
   if (!list?.length) return "";
   const pills = list
@@ -81,7 +81,7 @@ function renderTopBadges(list: string[] = []) {
   return `<div class="card__badges card__badges-top">${pills}</div>`;
 }
 
-// render bottom badges
+
 function renderBottomBadges(keys: string[] = []) {
   if (!keys?.length) return "";
   const pills = keys
@@ -99,7 +99,7 @@ function renderBottomBadges(keys: string[] = []) {
   return `<div class="card__badges card__badges-bottom" role="list">${pills}</div>`;
 }
 
-// skeletons
+
 export function renderSkeleton(count = APP_CONFIG.PAGE_SIZE) {
   const grid = $(APP_CONFIG.SELECTORS.grid);
   grid.dataset.state = "loading";
@@ -123,7 +123,7 @@ export function renderProducts(page = 1) {
   const inBundlesTab = state.tab === "bundles";
   const inSingleTab = state.tab === "single";
 
-  // найдём индекс первой карточки, которая реально получит class="card__bundle"
+
   let dividerIndex = -1;
   if (inAllTab) {
     for (let i = 0; i < items.length; i++) {

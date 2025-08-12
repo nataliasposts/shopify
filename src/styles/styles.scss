@@ -180,8 +180,6 @@ body {
   flex-wrap: wrap;
   gap: 24px;
 }
-
-/* Разделитель Bundle & Save — перенесён из мобайла в базовый слой */
 .collection__divider {
   display: none;
 }
@@ -221,7 +219,6 @@ body {
   left: 0;
 }
 
-/* Top/Bottom placement */
 .card__badges-top {
   top: 0;
   justify-content: space-between;
@@ -236,7 +233,6 @@ body {
   justify-content: center;
 }
 
-/* Badge (единое определение — убран дубль выше по файлу) */
 .badge {
   display: flex;
   flex-direction: row;
@@ -267,7 +263,6 @@ body {
   color: var(--color-white);
 }
 
-/* Card body */
 .card__body {
   display: flex;
   flex-direction: column;
@@ -422,6 +417,7 @@ body {
   justify-content: space-between;
   gap: 10px;
   font-weight: 700;
+  color: var(--color-text);
 }
 
 .faq__panel {
